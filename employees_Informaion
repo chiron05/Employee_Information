@@ -1,0 +1,45 @@
+package demo;
+import java.util.*;
+class Employess
+{ Scanner sc=new Scanner(System.in);
+  public void Info()
+  {	 
+	  String[] namearr1= new String[3];
+	  String[] Addressarr1= new String[3];
+	  String[] yearOfJoingarr1= new String[3];
+	  for(int i=0;i<3;i++)
+	  {	System.out.println("Enter name:");
+		  namearr1[i]=sc.nextLine();
+		  System.out.println("Enter  Address:");
+		  Addressarr1[i]=sc.nextLine();
+		  System.out.println("Enter year of joining:");
+		  yearOfJoingarr1[i]=sc.nextLine();
+	  }
+	  System.out.println("Name      year of joining      Address");
+	  for(int i=0;i<3;i++)
+		{
+			System.out.println(namearr1[i]+"         "+yearOfJoingarr1[i]+"               "+Addressarr1[i]);
+		} 
+	  
+	  
+  }
+ }
+
+public class Information {
+	
+
+	public static void main(String[] args) 
+	{
+		Employess emp1=new Employess();
+		emp1.Info();
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
